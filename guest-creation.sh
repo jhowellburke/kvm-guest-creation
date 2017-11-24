@@ -44,7 +44,7 @@ if [[ -d "/var/lib/libvirt/images/iso-images" && -f "$dir/CentOS-7-x86_64-Everyt
   menu_check="True"
 else
   echo "Missing ISO's from iso-images directory. Retrieving ISO's from fileserver(192.168.1.2) Please wait.."
-  echo "You will be prompted for fileserver password. Its the one that starts with vft#####"
+  echo "You will be prompted for fileserver password. Its the one that starts with password#####"
   echo "Copying ISO's might take a few minutes. Please wait until '"All Parameters Met Message"' appears"
   sleep 7
   cd $kvm_def_loc 2>> $error_log >> $status_log
